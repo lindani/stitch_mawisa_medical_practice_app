@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dr Ps Mawisa - Trusted Doctor</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-fixed": "#e5e2e3",
+                      "outline-variant": "#3c4a46",
+                      "on-tertiary-fixed-variant": "#474647",
+                      "on-primary": "#003731",
+                      "surface-container-lowest": "#0b0f10",
+                      "surface": "#101415",
+                      "inverse-surface": "#e0e3e5",
+                      "surface-container-highest": "#323537",
+                      "surface-dim": "#101415",
+                      "primary-fixed-dim": "#3cddc7",
+                      "secondary-fixed-dim": "#ffb95f",
+                      "tertiary-fixed-dim": "#c8c6c7",
+                      "on-background": "#e0e3e5",
+                      "outline": "#859490",
+                      "on-secondary-fixed-variant": "#653e00",
+                      "primary-fixed": "#62fae3",
+                      "on-error": "#690005",
+                      "tertiary": "#dcd9da",
+                      "surface-bright": "#363a3b",
+                      "surface-tint": "#3cddc7",
+                      "on-surface-variant": "#bacac5",
+                      "on-secondary-fixed": "#2a1700",
+                      "on-primary-container": "#00574d",
+                      "on-secondary": "#472a00",
+                      "secondary-container": "#ee9800",
+                      "inverse-primary": "#006b5f",
+                      "primary-container": "#2dd4bf",
+                      "on-tertiary-fixed": "#1b1b1c",
+                      "error-container": "#93000a",
+                      "secondary": "#ffb95f",
+                      "on-primary-fixed-variant": "#005047",
+                      "surface-variant": "#323537",
+                      "surface-container-high": "#272a2c",
+                      "surface-container": "#1d2022",
+                      "tertiary-container": "#bfbdbe",
+                      "background": "#101415",
+                      "on-tertiary": "#303031",
+                      "on-primary-fixed": "#00201c",
+                      "on-secondary-container": "#5b3800",
+                      "surface-container-low": "#191c1e",
+                      "inverse-on-surface": "#2d3133",
+                      "on-error-container": "#ffdad6",
+                      "primary": "#57f1db",
+                      "on-surface": "#e0e3e5",
+                      "on-tertiary-container": "#4d4c4d",
+                      "secondary-fixed": "#ffddb8",
+                      "error": "#ffb4ab"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "lg": "24px",
+                      "margin": "32px",
+                      "md": "16px",
+                      "sm": "8px",
+                      "xs": "4px",
+                      "xl": "48px",
+                      "gutter": "24px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "h2": [
+                              "Lexend"
+                      ],
+                      "body-md": [
+                              "Lexend"
+                      ],
+                      "h3": [
+                              "Lexend"
+                      ],
+                      "body-lg": [
+                              "Lexend"
+                      ],
+                      "label-sm": [
+                              "Lexend"
+                      ],
+                      "label-bold": [
+                              "Lexend"
+                      ],
+                      "h1": [
+                              "Lexend"
+                      ]
+              },
+              "fontSize": {
+                      "h2": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "h3": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "h1": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopAppBar (Web) -->
+<header class="hidden md:flex justify-between items-center w-full px-6 h-20 bg-neutral-900 dark:bg-black font-['Lexend'] font-bold tracking-tight text-white docked full-width top-0 shadow-none z-50 fixed border-b border-white/10">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary">
+<img alt="Doctor Profile Picture" class="w-full h-full object-cover" data-alt="professional portrait of a confident black male doctor in teal scrubs and stethoscope, modern clinic background, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvMBSKwWhfyBK3GGXtT6M8xMNsyzpwO_DajyV_eSDOEtPsePEJ4EG151Yw3Hhe5MvWMrG1cu2b27cps-oRnMntVEJk247HhKa9uFdpP8J-WvpYk6ThO_lm6bo23jqtIPxiIC7BCyPvy0UxCWbT2WTHo3H7_zSVG8owdPeUwmLLM1uO0_--veLqkDFOCuEApwDu6LrEmsb6trDHP22Y4BywBfxJvkSuWbIu4YNfF-G-VzSqiuSO_LlZP-usd9a9KP-eaMnmFdEtdjU"/>
+</div>
+<h1 class="text-2xl font-black text-teal-400 uppercase tracking-widest">Dr Ps Mawisa</h1>
+</div>
+<nav class="flex gap-8">
+<a class="text-teal-400 font-bold hover:bg-neutral-800 transition-colors active:scale-95 transition-transform px-3 py-2 rounded-lg" href="#">Home</a>
+<a class="text-neutral-400 hover:bg-neutral-800 transition-colors active:scale-95 transition-transform px-3 py-2 rounded-lg" href="#">Services</a>
+<a class="text-neutral-400 hover:bg-neutral-800 transition-colors active:scale-95 transition-transform px-3 py-2 rounded-lg" href="#">About</a>
+<a class="text-neutral-400 hover:bg-neutral-800 transition-colors active:scale-95 transition-transform px-3 py-2 rounded-lg" href="#">Contact</a>
+</nav>
+<button class="text-teal-400 dark:text-teal-400 hover:bg-neutral-800 transition-colors active:scale-95 transition-transform p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+</header>
+<!-- TopAppBar (Mobile Fallback) -->
+<header class="md:hidden flex justify-between items-center w-full px-6 h-20 bg-neutral-900 dark:bg-black font-['Lexend'] font-bold tracking-tight text-white docked full-width top-0 shadow-none z-50 fixed border-b border-white/10">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-primary">
+<img alt="Doctor Profile Picture" class="w-full h-full object-cover" data-alt="professional portrait of a confident black male doctor in teal scrubs and stethoscope, modern clinic background, dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs2cX-wEZblZvYYIzYZBnkQAOgZKUVxK73Izqww47tQSxqjBje-nCAPCANz6gwU3bkAyUGmgYBD_WYEJmf8xhuIlEJT8nkS9XwjCLgUIA_JA3uebqIbHUA1x6SIFvxDTFqBAuj5iW0lybf_DZJFmR70gf0G8ejK71y4y7aUUSlw0H1rfLEXjcHurg6V9TuFblz4OMj6K5CitWI4Iewxc8GfyUg5ZFX89LwBPeaMQdTi1Pe8ueX31F-dd8YS_3TdGZkOXvklr940N8"/>
+</div>
+<h1 class="text-xl font-black text-teal-400 uppercase tracking-widest truncate">Dr Ps Mawisa</h1>
+</div>
+<button class="text-teal-400 dark:text-teal-400 active:scale-95 transition-transform p-2">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</header>
+<main class="flex-grow pt-20 md:pt-24 pb-24 flex flex-col items-center">
+<!-- Hero Section -->
+<section class="w-full max-w-7xl px-4 md:px-lg py-xl flex flex-col md:flex-row items-center gap-lg md:gap-xl relative overflow-hidden">
+<!-- Decorative Glow -->
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -z-10 pointer-events-none mix-blend-screen"></div>
+<div class="flex-1 space-y-md md:space-y-lg z-10">
+<div class="inline-flex items-center gap-2 bg-surface-container-high border border-outline/30 rounded-full px-4 py-2">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-bold text-label-bold text-primary">NEW PATIENTS WELCOME</span>
+</div>
+<h1 class="font-h1 text-h1 text-on-surface">Trusted Doctor in <span class="text-primary block">Khayelitsha</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Expert care. Family first. Modern medicine.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-secondary text-on-secondary-fixed font-label-bold text-label-bold px-8 py-4 rounded-xl hover:bg-secondary-container transition-colors shadow-[0_0_20px_rgba(255,185,95,0.3)] flex items-center justify-center gap-2 group">
+                        Book Now
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border-2 border-primary text-primary font-label-bold text-label-bold px-8 py-4 rounded-xl hover:bg-primary/10 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">call</span>
+                        Emergency
+                    </button>
+</div>
+</div>
+<div class="flex-1 relative w-full h-[400px] md:h-[600px] mt-8 md:mt-0 rounded-3xl overflow-hidden border border-outline/20">
+<img alt="Doctor consulting patient" class="w-full h-full object-cover" data-alt="modern medical clinic interior, doctor consulting with patient, warm energetic teal lighting, professional, trustworthy, high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxuf64ylbMaeRQAfq-5hAChpexDNC9YqCDEFEe0DnYj3EHPLxdrGFM1t8CLpQrxJ4wX0XsidE6GMMl8pKsFls3Y4GtB0NCSrJ31oHfTXkhho7OHsgXX1RoX-3n477D7Ql0KeHsoTD8xeuq2-A6SXWKFcFaenfSWrHyMGYr120HO9sLjZ2n2yMZbcw78PQzk3zyWZOT76vRBGfC_Zr1eLy4GKdrd9DbpVRascudw9QJDLMEl2BRbXzkIRGWzoefuNcKy6WrnxNF9no"/>
+<!-- Floating Card -->
+<div class="absolute bottom-6 left-6 right-6 bg-surface-container-high/90 backdrop-blur-md border border-white/10 rounded-2xl p-6 shadow-2xl">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<div>
+<p class="font-h3 text-h3 text-on-surface">15+ Years</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Trusted Care</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="w-full max-w-7xl px-4 md:px-lg py-xl">
+<h2 class="font-h2 text-h2 text-on-surface mb-8 text-center"><span class="text-primary">Our</span> Services</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Service Card 1 -->
+<div class="bg-surface-container rounded-3xl overflow-hidden border border-outline/20 hover:border-primary/50 transition-colors group">
+<div class="h-48 w-full overflow-hidden">
+<img alt="General Checkup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqoUpGFEFEu3NJm03L_WXpm8W6p_lIPqEHvSEuCPON9DJxHlrwBsG75GsbFsRHWFyTCHWjpiABYpYBRjrynVr48kPZi91VhesP0Cddq5LcxRfTGS-bkYrVgizRg3hQ9SRhWJ9_GoAMq6FPcA6IG3JB-jhGcbTr7zUZUig619lBGKfyI8KbShvn44YV5Xt1UZ5F24hiI5mNvEW7mZqyddGEgVeBah-1QWteZV9rTD8tr8qzoZYvMJRbA9uiFWcNRrGcGwCwJgbYH80"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Checkups</h3>
+<p class="text-on-surface-variant">Daily health monitoring.</p>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container rounded-3xl overflow-hidden border border-outline/20 hover:border-primary/50 transition-colors group">
+<div class="h-48 w-full overflow-hidden">
+<img alt="Pediatrics" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArhVC85mmqihvz4fHml6j4DEKSj2Hy0SPUceKF15x9XRdCxwVEb7BDe7PKOpmpIIWmuQS2XLvLFXWszaRpzCVcUCziMP7NTyR0mj3oAkY1s_NX-p9a7zXdUH3W_vla3-VAnByUILKMwNzf_HLpLkOBR90R81_OW8vMnp1xHuymClJqdyu0MPns6taAV5IjOAiNIQQrtSY2IoNUhQmuUN4tbfCFKpirtqyk3hWIWjFzJ3gwGEamNBWLY_WI4ZXWz5PjRG_mnirzc_g"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Pediatrics</h3>
+<p class="text-on-surface-variant">Care for kids.</p>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-surface-container rounded-3xl overflow-hidden border border-outline/20 hover:border-primary/50 transition-colors group">
+<div class="h-48 w-full overflow-hidden">
+<img alt="Chronic Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkcSiYDQpLuQin5Foym-qDoATOjDTWUOAXjEF_x6e-PXwx2vPjNiEoS-IlyRRTOy2usIphOqWi5jRhjhHp6nhlzGsry1pZb0RJLb2GKoCqUglongc6M0yAtoVxYP6SQlPi-8mxCwJvGywT79V_rb6fxJFFRyjlwnCdBzE-CoaZXyRlmkvLcNphA7kZ0BVLXWSZZQXlzH09lrgF6ap2ZosWf1L9Z9puVdPjntiDRvsPR48SFmH2URMxUtEISTwe8xV6iOTbcYqFvHo"/>
+</div>
+<div class="p-6">
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Chronic Care</h3>
+<p class="text-on-surface-variant">Long-term health.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us Section -->
+<section class="w-full max-w-7xl px-4 md:px-lg py-xl">
+<h2 class="font-h2 text-h2 text-on-surface mb-8 text-center"><span class="text-primary">Why</span> Us</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Why Card 1 -->
+<div class="bg-surface-container-high rounded-3xl p-6 border border-outline/20 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">timer</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Fast</h3>
+<p class="text-on-surface-variant">No long waits.</p>
+</div>
+<!-- Why Card 2 -->
+<div class="bg-surface-container-high rounded-3xl p-6 border border-outline/20 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center text-secondary mb-4">
+<span class="material-symbols-outlined text-3xl">medical_services</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Expert</h3>
+<p class="text-on-surface-variant">Top-tier doctors.</p>
+</div>
+<!-- Why Card 3 -->
+<div class="bg-surface-container-high rounded-3xl p-6 border border-outline/20 flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">location_on</span>
+</div>
+<h3 class="font-h3 text-h3 text-on-surface mb-2">Local</h3>
+<p class="text-on-surface-variant">Right in Khayelitsha.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden bg-neutral-900/95 dark:bg-neutral-950/95 backdrop-blur-md font-['Lexend'] text-[10px] font-semibold uppercase tracking-tighter fixed bottom-0 w-full z-50 rounded-t-xl border-t border-teal-500/20 shadow-[0_-4px_10px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3">
+<a class="flex flex-col items-center justify-center text-teal-400 bg-teal-500/10 rounded-lg p-2 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">home</span>
+            Home
+        </a>
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:text-teal-300 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1">calendar_today</span>
+            Book
+        </a>
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:text-teal-300 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1">vital_signs</span>
+            Health
+        </a>
+<a class="flex flex-col items-center justify-center text-neutral-500 p-2 hover:text-teal-300 active:scale-90 transition-all duration-150" href="#">
+<span class="material-symbols-outlined mb-1">person</span>
+            Profile
+        </a>
+</nav>
+</body></html>
