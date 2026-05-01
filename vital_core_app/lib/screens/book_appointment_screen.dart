@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../theme/app_colors.dart';
 
 class BookAppointmentScreen extends StatelessWidget {
-  const BookAppointmentScreen({Key? key}) : super(key: key);
+  const BookAppointmentScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -104,7 +104,7 @@ class BookAppointmentScreen extends StatelessWidget {
             child: CachedNetworkImage(
               imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAt1vT23OhUD6gPTBdofn7qQqhtyOu3GY0x0Gidr75DA0EEFIIUdKlGvGav4gk8MnPdGRCumN8xU4lHmAvgivwxntOMmG3SEhhATHVCO46-9XU0r3R1TETHlvGZFPYZxw_gR4VZ0lzUTpsRqsE_WHu_FQ__IZjGWhbHt2HWysStTY31I7fty8LfHZg6zVYWf6Lalv40PG1BjD3nRMUhlCwy0IXfIVKIgBduoOAQ2lmQmk4D9EROpi6BbOxEqdVPl3G9dj3LTVYKk0Q',
               fit: BoxFit.cover,
-              color: Colors.black.withOpacity(0.4),
+              color: Colors.black.withValues(alpha: 0.4),
               colorBlendMode: BlendMode.darken,
             ),
           ),
@@ -115,7 +115,7 @@ class BookAppointmentScreen extends StatelessWidget {
                 end: Alignment.topCenter,
                 colors: [
                   AppColors.background,
-                  AppColors.background.withOpacity(0.4),
+                  AppColors.background.withValues(alpha: 0.4),
                   Colors.transparent,
                 ],
               ),
@@ -155,7 +155,7 @@ class BookAppointmentScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainerHigh,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -165,7 +165,7 @@ class BookAppointmentScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: AppColors.secondary.withOpacity(0.2),
+                  color: AppColors.secondary.withValues(alpha: 0.2),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(Icons.call, color: AppColors.secondary),
@@ -204,7 +204,7 @@ class BookAppointmentScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.1)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
         boxShadow: const [
           BoxShadow(
             color: Colors.black26,
@@ -242,7 +242,7 @@ class BookAppointmentScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 elevation: 8,
-                shadowColor: AppColors.primary.withOpacity(0.3),
+                shadowColor: AppColors.primary.withValues(alpha: 0.3),
               ),
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -274,7 +274,7 @@ class BookAppointmentScreen extends StatelessWidget {
           style: const TextStyle(color: AppColors.onBackground),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: TextStyle(color: AppColors.onSurfaceVariant.withOpacity(0.5)),
+            hintStyle: TextStyle(color: AppColors.onSurfaceVariant.withValues(alpha: 0.5)),
             filled: true,
             fillColor: AppColors.surfaceDim,
             contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -316,7 +316,7 @@ class BookAppointmentScreen extends StatelessWidget {
           child: DropdownButtonHideUnderline(
             child: DropdownButton<String>(
               isExpanded: true,
-              hint: Text(hint, style: TextStyle(color: AppColors.onSurfaceVariant.withOpacity(0.5))),
+              hint: Text(hint, style: TextStyle(color: AppColors.onSurfaceVariant.withValues(alpha: 0.5))),
               dropdownColor: AppColors.surfaceContainerHigh,
               icon: const Icon(Icons.arrow_drop_down, color: AppColors.onSurfaceVariant),
               items: const [],

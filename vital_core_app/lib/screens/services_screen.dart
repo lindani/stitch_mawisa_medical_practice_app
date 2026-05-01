@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../theme/app_colors.dart';
 
 class ServicesScreen extends StatelessWidget {
-  const ServicesScreen({Key? key}) : super(key: key);
+  const ServicesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +57,7 @@ class ServicesScreen extends StatelessWidget {
               height: 40,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                border: Border.all(color: Colors.white.withOpacity(0.1)),
+                border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
               ),
               child: ClipOval(
                 child: CachedNetworkImage(
@@ -98,7 +98,7 @@ class ServicesScreen extends StatelessWidget {
                 end: Alignment.topCenter,
                 colors: [
                   AppColors.background,
-                  AppColors.background.withOpacity(0.5),
+                  AppColors.background.withValues(alpha: 0.5),
                   Colors.transparent,
                 ],
               ),
@@ -114,9 +114,9 @@ class ServicesScreen extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   decoration: BoxDecoration(
-                    color: AppColors.surfaceContainerHigh.withOpacity(0.8),
+                    color: AppColors.surfaceContainerHigh.withValues(alpha: 0.8),
                     borderRadius: BorderRadius.circular(24),
-                    border: Border.all(color: Colors.white.withOpacity(0.1)),
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
@@ -158,7 +158,7 @@ class ServicesScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       clipBehavior: Clip.antiAlias,
       child: Column(
@@ -218,7 +218,7 @@ class ServicesScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       clipBehavior: Clip.antiAlias,
       child: Column(
@@ -284,7 +284,7 @@ class ServicesScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       clipBehavior: Clip.antiAlias,
       child: Column(
@@ -313,7 +313,7 @@ class ServicesScreen extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: AppColors.surfaceVariant.withOpacity(0.5),
+                        color: AppColors.surfaceVariant.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Row(
@@ -328,7 +328,7 @@ class ServicesScreen extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
                       decoration: BoxDecoration(
-                        color: AppColors.surfaceVariant.withOpacity(0.5),
+                        color: AppColors.surfaceVariant.withValues(alpha: 0.5),
                         borderRadius: BorderRadius.circular(8),
                       ),
                       child: Row(
@@ -362,7 +362,7 @@ class ServicesScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.05)),
       ),
       clipBehavior: Clip.antiAlias,
       child: Column(
@@ -379,7 +379,7 @@ class ServicesScreen extends StatelessWidget {
                   fit: BoxFit.cover,
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin: Alignment.bottomCenter,
                       end: Alignment.topCenter,

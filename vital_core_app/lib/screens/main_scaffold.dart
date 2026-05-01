@@ -6,7 +6,7 @@ import 'book_appointment_screen.dart';
 import 'contact_screen.dart';
 
 class MainScaffold extends StatefulWidget {
-  const MainScaffold({Key? key}) : super(key: key);
+  const MainScaffold({super.key});
 
   @override
   State<MainScaffold> createState() => _MainScaffoldState();
@@ -38,10 +38,10 @@ class _MainScaffoldState extends State<MainScaffold> {
       height: 80,
       decoration: BoxDecoration(
         color: const Color(0xFF18181b), // zinc-900
-        border: Border(top: BorderSide(color: Colors.white.withOpacity(0.1))),
+        border: Border(top: BorderSide(color: Colors.white.withValues(alpha: 0.1))),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.3),
+            color: Colors.black.withValues(alpha: 0.3),
             offset: const Offset(0, -4),
             blurRadius: 10,
           ),
@@ -87,7 +87,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                     height: 48,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.primary.withOpacity(0.1),
+                      color: AppColors.primary.withValues(alpha: 0.1),
                     ),
                   ),
                 Icon(

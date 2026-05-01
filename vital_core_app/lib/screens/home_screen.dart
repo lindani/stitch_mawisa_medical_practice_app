@@ -3,7 +3,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../theme/app_colors.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
             decoration: BoxDecoration(
               color: AppColors.surfaceContainerHigh,
               borderRadius: BorderRadius.circular(24),
-              border: Border.all(color: AppColors.outline.withOpacity(0.3)),
+              border: Border.all(color: AppColors.outline.withValues(alpha: 0.3)),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
@@ -131,7 +131,7 @@ class HomeScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                     ),
                     elevation: 8,
-                    shadowColor: AppColors.secondary.withOpacity(0.5),
+                    shadowColor: AppColors.secondary.withValues(alpha: 0.5),
                   ),
                   child: const Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -173,7 +173,7 @@ class HomeScreen extends StatelessWidget {
             width: double.infinity,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(24),
-              border: Border.all(color: AppColors.outline.withOpacity(0.2)),
+              border: Border.all(color: AppColors.outline.withValues(alpha: 0.2)),
             ),
             child: Stack(
               fit: StackFit.expand,
@@ -192,16 +192,16 @@ class HomeScreen extends StatelessWidget {
                   child: Container(
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: AppColors.surfaceContainerHigh.withOpacity(0.9),
+                      color: AppColors.surfaceContainerHigh.withValues(alpha: 0.9),
                       borderRadius: BorderRadius.circular(16),
-                      border: Border.all(color: Colors.white.withOpacity(0.1)),
+                      border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
                     ),
                     child: Row(
                       children: [
                         Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: AppColors.primary.withOpacity(0.2),
+                            color: AppColors.primary.withValues(alpha: 0.2),
                             shape: BoxShape.circle,
                           ),
                           child: const Icon(Icons.verified, color: AppColors.primary, size: 28),
@@ -263,7 +263,7 @@ class HomeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: AppColors.outline.withOpacity(0.2)),
+        border: Border.all(color: AppColors.outline.withValues(alpha: 0.2)),
       ),
       clipBehavior: Clip.antiAlias,
       child: Column(
@@ -336,14 +336,14 @@ class HomeScreen extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.surfaceContainerHigh,
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: AppColors.outline.withOpacity(0.2)),
+        border: Border.all(color: AppColors.outline.withValues(alpha: 0.2)),
       ),
       child: Column(
         children: [
           Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.2),
+              color: color.withValues(alpha: 0.2),
               shape: BoxShape.circle,
             ),
             child: Icon(icon, color: color, size: 32),

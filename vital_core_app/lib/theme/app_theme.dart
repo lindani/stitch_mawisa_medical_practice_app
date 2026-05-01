@@ -19,8 +19,6 @@ class AppTheme {
         onSurface: AppColors.onSurface,
         error: AppColors.error,
         onError: AppColors.onError,
-        background: AppColors.background,
-        onBackground: AppColors.onBackground,
       ),
       textTheme: baseTextTheme.copyWith(
         displayLarge: GoogleFonts.lexend(fontSize: 48, fontWeight: FontWeight.w700, height: 1.1, letterSpacing: -0.02 * 48, color: AppColors.onSurface), // h1
@@ -31,8 +29,8 @@ class AppTheme {
         labelLarge: GoogleFonts.lexend(fontSize: 14, fontWeight: FontWeight.w700, height: 1.2, letterSpacing: 0.05 * 14, color: AppColors.onSurface), // label-bold
         labelSmall: GoogleFonts.lexend(fontSize: 12, fontWeight: FontWeight.w500, height: 1.2, color: AppColors.onSurface), // label-sm
       ).apply(
-        bodyColor: AppColors.onBackground,
-        displayColor: AppColors.onBackground,
+        bodyColor: AppColors.onSurface,
+        displayColor: AppColors.onSurface,
       ),
       useMaterial3: true,
     );
